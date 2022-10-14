@@ -1,1 +1,44 @@
-<h1>Hello there</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="toolbar" role="banner">
+            <img width="40" alt="McDonalds Logo" src="assets/McD-squareLogo.png" />
+            <span>Whats For Lunch?</span>
+            <div class="spacer"></div>
+            </div>
+
+            <div class="content">
+            <h2>Where Should I Eat?</h2>
+            <p>Let your fate be decided by the algorithm or pick the correct answer:</p>
+
+            <div class="card-container">
+                <a class="card">
+                <span>Random</span>
+                </a>
+                <a class="card" (click)="correctAnswer()">
+                <span>The Correct Answer</span>
+                </a>
+            </div>
+            <% if @show_food %>
+            <h2>You should eat at <span class="restaurant"></span></h2>
+            <img src="assets/ronald.jpeg" class="ronald">
+            <div class="card-container">
+                <a class="card" href="slack://channel?team=TT1T37BHD&id=CSNQD8KS7">
+                <span>Start a Lunch Train</span>
+                </a>
+                <a class="card" target="_blank" href="https://www.google.ca/maps/search/{{ theChosenOne }}">
+                <span>Get Directions</span>
+                </a>
+                <a class="card" target="_blank" href="https://www.skipthedishes.com">
+                <span>Get it Delivered</span>
+                </a>
+            </div>
+            <% end %>
+
+            <footer>
+                <p>I hope I don't get fired for wasting the hackathon making this.</p>
+            </footer>
+            </div>
+        </div>
+    </div>
+</div>
