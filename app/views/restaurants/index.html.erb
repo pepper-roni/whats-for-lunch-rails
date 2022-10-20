@@ -1,27 +1,34 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <div class="toolbar" role="banner">
-            <img width="40" alt="McDonalds Logo" src="assets/McD-squareLogo.png" />
-            <span>Whats For Lunch?</span>
-            <div class="spacer"></div>
+            <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">WFL</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Restaurants</a>
+                    <a class="nav-link" href="#">Login</a>
+                </div>
+                </div>
             </div>
-
+            </nav>
             <div class="content">
-            <h2>Where Should I Eat?</h2>
+            <h1 class="display-5">What's For Lunch?</h1>
             <p>Let your fate be decided by the algorithm or pick the correct answer:</p>
 
             <div class="card-container">
                 <a class="card">
                 <span>Random</span>
                 </a>
-                <a class="card" (click)="correctAnswer()">
+                <a class="card"">
                 <span>The Correct Answer</span>
                 </a>
             </div>
-            <% if @show_food %>
-            <h2>You should eat at <span class="restaurant"></span></h2>
-            <img src="assets/ronald.jpeg" class="ronald">
+            <h2>You should eat at <span class="restaurant">McDonalds</span></h2>
             <div class="card-container">
                 <a class="card" href="slack://channel?team=TT1T37BHD&id=CSNQD8KS7">
                 <span>Start a Lunch Train</span>
@@ -33,8 +40,6 @@
                 <span>Get it Delivered</span>
                 </a>
             </div>
-            <% end %>
-
             <footer>
                 <p>I hope I don't get fired for wasting the hackathon making this.</p>
             </footer>
