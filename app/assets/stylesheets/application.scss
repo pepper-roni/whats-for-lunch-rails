@@ -36,6 +36,7 @@
     transition: all 0.2s ease-in-out;
     line-height: 24px;
     font-weight: 600;
+    cursor: pointer;
   }
 
   .content {
@@ -62,13 +63,13 @@
   .card.card-small {
     height: 16px;
     width: 168px;
+    padding: 3px 6px 3px 6px;
+    margin: 0 4px 8px;
+    font-weight: 400;
+    display: inline;
   }
   
-  .card-container .card:not(.highlight-card) {
-    cursor: pointer;
-  }
-  
-  .card-container .card:not(.highlight-card):hover {
+  .card-container .card:hover, .card-small:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
   }
@@ -79,7 +80,7 @@
 
 a,
 a:visited {
-  color: #fdffef;
+  color: #5452CC;
   text-decoration: none;
 }
 
