@@ -9,3 +9,6 @@
 Restaurant.create(name: 'McDonalds')
 Restaurant.create(name: 'Northern Chicken')
 Restaurant.create(name: 'Remedy')
+Restaurant.create(name: 'KFC')
+Restaurant.create(name: 'Tres Carnales')
+Restaurant.create(name: 'Underground Tap & Grill')

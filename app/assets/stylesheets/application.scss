@@ -16,12 +16,15 @@
 
  @import "bootstrap";
 
+ body {
+  background-color: #5452CC;
+ }
+
  .card {
     all: unset;
     border-radius: 4px;
-    border: 1px solid #FFC72C;
-    background-color: #DA291C;
-    color: #FFC72C;
+    background-color: #f2ff80;
+    color: #5452CC;
     height: 40px;
     width: 200px;
     margin: 0 8px 16px;
@@ -42,6 +45,7 @@
     max-width: 960px;
     flex-direction: column;
     align-items: center;
+    color: #f2ff80;
   }
 
   .card-container {
@@ -72,30 +76,15 @@
   .card-container .card:not(.highlight-card):hover .material-icons path {
     fill: rgb(105, 103, 103);
   }
-  
-
-  .toolbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    background-color: #DA291C;
-    color: #FFC72C;
-    font-weight: 800;
-  }
 
 a,
-a:visited,
-a:hover {
-  color: #FFC72C;
+a:visited {
+  color: #fdffef;
   text-decoration: none;
 }
 
 a:hover {
-  color: #FFC72C;
+  color: #5452CC;
 }
 
 footer {
@@ -110,15 +99,10 @@ footer {
     align-items: center;
     line-height: 20px;
     display: flex;
-    background-color: #DA291C;
-    color: #FFC72C;
+    color: #f2ff80;
     font-weight: 600;
   }
   
   .restaurant {
-    color: #DA291C;
-  }
-  
-  .ronald {
-    max-height:300px;
+    color: #f2ff80;
   }
