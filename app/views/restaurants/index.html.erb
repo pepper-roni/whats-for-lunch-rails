@@ -20,20 +20,20 @@
             <h1 class="display-5">What's For Lunch?</h1>
             <p>Let your fate be decided by the algorithm or pick the correct answer:</p>
 
-            <div class="card-container">
+            <%# <div class="card-container">
                 <a class="card">
                 <span>Random</span>
                 </a>
                 <a class="card"">
                 <span>The Correct Answer</span>
                 </a>
-            </div>
-            <h2>You should eat at <span class="restaurant">McDonalds</span></h2>
+            </div> %>
+            <h2>You should eat at <span class="restaurant"><%= @restaurant.name %></span></h2>
             <div class="card-container">
                 <a class="card" href="slack://channel?team=TT1T37BHD&id=CSNQD8KS7">
                 <span>Start a Lunch Train</span>
                 </a>
-                <a class="card" target="_blank" href="https://www.google.ca/maps/search/{{ theChosenOne }}">
+                <a class="card" target="_blank" href="https://www.google.ca/maps/search/#{restaurant}">
                 <span>Get Directions</span>
                 </a>
                 <a class="card" target="_blank" href="https://www.skipthedishes.com">
