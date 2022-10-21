@@ -21,10 +21,26 @@
  }
 
  .navbar {
-  border-bottom: 1px solid #D2BFFF;
-  background-color: #f2ff80;
   font-weight: 600;
  }
+
+ a.nav-link {
+  color: #f2ff80;
+ }
+
+ a.nav-link:visited {
+  color: #f2ff80;
+ }
+
+ a.nav-link:hover {
+  color: #f2ff80;
+  text-decoration: underline;
+ }
+
+ a.card:visited {
+  color: #5452CC;
+  text-decoration: none;
+}
 
  .card {
     all: unset;
@@ -78,17 +94,6 @@
     transform: translateY(-3px);
     box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
   }
-
-
-a,
-a:visited {
-  color: #5452CC;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #5452CC;
-}
 
 footer {
     position: absolute;
