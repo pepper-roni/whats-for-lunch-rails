@@ -20,6 +20,12 @@
   background-color: #5452CC;
  }
 
+ .navbar {
+  border-bottom: 1px solid #D2BFFF;
+  background-color: #f2ff80;
+  font-weight: 600;
+ }
+
  .card {
     all: unset;
     border-radius: 4px;
@@ -65,7 +71,6 @@
     width: 168px;
     padding: 3px 6px 3px 6px;
     margin: 0 4px 8px;
-    font-weight: 400;
     display: inline;
   }
   
@@ -73,10 +78,7 @@
     transform: translateY(-3px);
     box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
   }
-  
-  .card-container .card:not(.highlight-card):hover .material-icons path {
-    fill: rgb(105, 103, 103);
-  }
+
 
 a,
 a:visited {

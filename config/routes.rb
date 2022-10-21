@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root "restaurants#index"
+  root "whats_for_lunch#index"
 
-  get "/restaurants", to: "restaurants#index"
+  resources :restaurants
 end

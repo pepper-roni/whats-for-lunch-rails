@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>WhatsForLunch</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Whats for Lunch</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,6 +12,27 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container-fuild">
+      <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+              <%= link_to "Home", root_path, class: 'nav-link active'%>
+              <%= link_to "Restaurants", restaurants_path, class: 'nav-link'%>
+              <a class="nav-link" href="#">Login</a>
+          </div>
+          </div>
+      </div>
+      </nav>
+      <div class="container">
+        <%= yield %>
+      </div>
+      <footer>
+        <p>Powered by Ruby on Rails and PostgreSQL</p>
+      </footer>
+    </div>
   </body>
 </html>
