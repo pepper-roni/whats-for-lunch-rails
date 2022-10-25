@@ -1,1 +1,18 @@
-loop through the raunts
+<h2>All Restaurants</h2>
+<table class="table table-hover table-borderless">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+  <% @restaurants.each do |restaurant| %>
+    <tr>
+      <td scope="row"><%= restaurant.name %></td>
+      <td><%= restaurant.description %></td>
+      <td><%= link_to "Show", restaurant %></td>
+      <td><%= link_to "Edit", edit_restaurant_path(restaurant) %></td>
+      <td><%= link_to "Destroy", restaurant, data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %></td>
+    </tr>
+  <% end %>
+</table>

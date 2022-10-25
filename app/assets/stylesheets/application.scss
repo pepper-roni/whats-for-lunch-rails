@@ -20,6 +20,26 @@
   background-color: #5452CC;
  }
 
+ form {
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: #fafce1;
+  color: #5452CC;
+ }
+
+ table {
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: #fafce1;
+  color: #5452CC;
+ }
+
+ h2 {
+  color: #f2ff80;
+ }
+
  .navbar {
   font-weight: 600;
  }
@@ -96,17 +116,7 @@
   }
 
 footer {
-    position: absolute;
-    padding: 0 10px 0 10px;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    margin-top: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 20px;
-    display: flex;
+    text-align: center;
     color: #f2ff80;
     font-weight: 600;
   }
