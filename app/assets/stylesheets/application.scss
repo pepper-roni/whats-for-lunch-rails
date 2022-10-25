@@ -36,6 +36,17 @@
   color: #5452CC;
  }
 
+ .btn.btn-primary {
+  background-color: #f2ff80;
+  color: #5452CC;
+}
+
+.btn.btn-primary:hover {
+  background-color: #e5ff00;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.35);
+  color: #5452CC;
+}
+
  h2 {
   color: #f2ff80;
  }
