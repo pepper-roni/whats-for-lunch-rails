@@ -20,6 +20,10 @@ class RestaurantsController < ApplicationController
     @restaurant = Restaurant.find(params[:id])
   end
 
+  def destroy
+    Restaurant.destroy(params[:id])
+  end
+
   def restaurant_params
     params.require(:restaurant).permit(:name, :description)
   end
