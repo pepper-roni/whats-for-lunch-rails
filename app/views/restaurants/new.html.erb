@@ -5,15 +5,6 @@
 </div>
 <div class="row">
   <div class="col-7">
-    <% flash.each do |type, msg| %>
-      <div>
-        <%= msg %>
-      </div>
-    <% end %>
-  </div>
-</div>
-<div class="row">
-  <div class="col-7">
     <%= form_with model: @restaurant do |form| %>
       <div class="form-group required">
         <label for="name">Name</label>
