@@ -14,18 +14,19 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_04_044621) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "addresses", force: :cascade do |t|
+  create_table "locations", force: :cascade do |t|
     t.string "address", null: false
     t.string "city", null: false
     t.string "province_code"
     t.string "country_code", null: false
     t.string "postal_code", null: false
+    t.text "description"
     t.bigint "restaurant_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["country_code"], name: "index_addresses_on_country_code"
-    t.index ["province_code"], name: "index_addresses_on_province_code"
-    t.index ["restaurant_id"], name: "index_addresses_on_restaurant_id"
+    t.index ["country_code"], name: "index_locations_on_country_code"
+    t.index ["province_code"], name: "index_locations_on_province_code"
+    t.index ["restaurant_id"], name: "index_locations_on_restaurant_id"
   end
 
   create_table "restaurants", force: :cascade do |t|
