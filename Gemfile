@@ -30,8 +30,8 @@ gem "jbuilder"
 # styles
 gem 'bootstrap', '~> 5.2.1'
 
-# auth me daddy
-gem 'devise'
+# auth me daddy: devise hates turbo
+gem "devise", github: "ghiculescu/devise", branch: "error-code-422" # https://github.com/heartcombo/devise/pull/5340 not yet merged
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
