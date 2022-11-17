@@ -29,19 +29,19 @@
  }
 
  form {
-  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+  border: 1px solid #f2ff80;
   border-radius: 0.5rem;
   padding: 1rem;
-  background-color: #fafce1;
-  color: #5452CC;
+  color: #f2ff80;
  }
 
  table {
-  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
-  border-radius: 0.5rem;
   padding: 1rem;
-  background-color: #fafce1;
-  color: #5452CC;
+  color: #f2ff80;
+ }
+
+ thead, th, td {
+  color: #f2ff80;
  }
 
  .btn.btn-primary {
@@ -55,7 +55,7 @@
   color: #5452CC;
 }
 
- h2 {
+ h1, h2, h3, h4, h5 {
   color: #f2ff80;
  }
 

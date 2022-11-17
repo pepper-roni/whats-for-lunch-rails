@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col">
-    <h2>All Restaurants</h2>
+    <h1>All Restaurants</h1>
   </div>
   <div class="col">
     <%= link_to "Add Restaurant", new_restaurant_path, class: 'btn btn-primary', style: 'float: right' %>
@@ -8,20 +8,23 @@
 </div>
 <div class="row">
   <div class="col">
-    <table class="table table-hover table-borderless">
+    <table class="table table-hover">
       <thead>
         <tr>
           <th scope="col">Name</th>
           <th scope="col">Description</th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+          <th scope="col"></th>
         </tr>
       </thead>
       <% @restaurants.each do |restaurant| %>
         <tr>
           <td scope="row"><%= restaurant.name %></td>
           <td><%= restaurant.description %></td>
-          <td><%= link_to "Show", restaurant %></td>
-          <td><%= link_to "Edit", edit_restaurant_path(restaurant) %></td>
-          <td><%= link_to "Destroy", restaurant, data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %></td>
+          <td><%= link_to "Show", restaurant, class: 'btn btn-primary btn-sm' %></td>
+          <td><%= link_to "Edit", edit_restaurant_path(restaurant), class: 'btn btn-primary btn-sm' %></td>
+          <td><%= link_to "Destroy", restaurant, class: 'btn btn-primary btn-sm', data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %></td>
         </tr>
       <% end %>
     </table>
