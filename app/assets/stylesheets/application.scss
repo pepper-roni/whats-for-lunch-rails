@@ -20,6 +20,10 @@
   background-color: #5452CC;
  }
 
+ .modal-content {
+  background-color: #5452CC;
+ }
+
  .notice {
   color: #f2ff80;
  }
@@ -28,8 +32,15 @@
   color: #f2ff80;
  }
 
+ label {
+  margin-bottom: 0.5rem;
+ }
+
+ input {
+  margin-bottom: 0.5rem;
+ }
+
  form {
-  border: 1px solid #f2ff80;
   border-radius: 0.5rem;
   padding: 1rem;
   color: #f2ff80;
