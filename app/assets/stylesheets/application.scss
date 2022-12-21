@@ -17,19 +17,12 @@
  @import "bootstrap";
 
  body {
-  background-color: #5452CC;
+  background-color: #ffffff;
+  color: #5452CC;
  }
 
  .modal-content {
   background-color: #5452CC;
- }
-
- .notice {
-  color: #f2ff80;
- }
-
- .alert {
-  color: #f2ff80;
  }
 
  label {
@@ -43,35 +36,26 @@
  form {
   border-radius: 0.5rem;
   padding: 1rem;
-  color: #f2ff80;
  }
 
  table {
   padding: 1rem;
-  color: #f2ff80;
- }
-
- thead, th, td {
-  color: #f2ff80;
  }
 
  .btn.btn-primary {
-  background-color: #f2ff80;
-  color: #5452CC;
+  color: #f2ff80;
+  background-color: #5452CC;
 }
 
 .btn.btn-primary:hover {
-  background-color: #e5ff00;
+  background-color: #f2ff80;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.35);
   color: #5452CC;
 }
 
- h1, h2, h3, h4, h5 {
-  color: #f2ff80;
- }
-
  .navbar {
   font-weight: 600;
+  background-color: #5452CC;
  }
 
  a.nav-link {
@@ -88,15 +72,15 @@
  }
 
  a.card:visited {
-  color: #5452CC;
+  color: #f2ff80;
   text-decoration: none;
 }
 
  .card {
     all: unset;
     border-radius: 4px;
-    background-color: #f2ff80;
-    color: #5452CC;
+    background-color: #5452CC;
+    color: #f2ff80;
     height: 40px;
     width: 200px;
     margin: 0 8px 16px;
@@ -111,14 +95,24 @@
     cursor: pointer;
   }
 
-  .content {
+  .content-lunch {
     display: flex;
-    margin: 82px auto 32px;
+    margin: 30px auto 32px;
     padding: 0 16px;
     max-width: 960px;
     flex-direction: column;
     align-items: center;
-    color: #f2ff80;
+    border-top: 5px;
+    border-color: #000;
+  }
+
+  .content {
+    display: flex;
+    margin: 30px auto 32px;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .card-container {
@@ -135,22 +129,25 @@
   .card.card-small {
     height: 16px;
     width: 168px;
-    padding: 3px 6px 3px 6px;
+    padding: 6px 12px 6px 12px;
     margin: 0 4px 8px;
     display: inline;
+    color: #f2ff80;
   }
   
   .card-container .card:hover, .card-small:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+    color: #f2ff80;
   }
 
 footer {
     text-align: center;
-    color: #f2ff80;
     font-weight: 600;
   }
   
   .restaurant {
-    color: #f2ff80;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    display: block;
   }

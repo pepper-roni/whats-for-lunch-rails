@@ -1,17 +1,23 @@
-<div class="content">
-    <h1 class="display-5">What's For Lunch?</h1>
-    <p>Let your fate be decided by the algorithm</p>
-    <h2>You should eat at <span class="restaurant"><%= @random_restaurant.name %></span></h2>
-    <p>I don't want that <%= link_to "give me another", root_path, class: "card card-small" %></p>
-    <div class="card-container">
-        <a class="card" href="slack://channel?team=TT1T37BHD&id=CSNQD8KS7">
-        <span>Start a Lunch Train</span>
-        </a>
-        <a class="card" target="_blank" href="https://www.google.ca/maps/search/<%= @random_restaurant.name %>">
-        <span>Get Directions</span>
-        </a>
-        <a class="card" target="_blank" href="https://www.skipthedishes.com">
-        <span>Get it Delivered</span>
-        </a>
+    <div class="row">
+        <div class="col border-bottom">
+            <h1 class="display-1">You should eat at <span class="restaurant"><%= @random_restaurant.name %></span></h1>
+        </div>
     </div>
-</div>
+    <div class="row purple-main">
+        <div class="col">
+            <div class="content-lunch">
+                <p>I don't want that <%= link_to "give me another", root_path, class: "card card-small" %></p>
+                <div class="card-container">
+                    <a class="card" href="slack://channel?team=TT1T37BHD&id=CSNQD8KS7">
+                    <span>Start a Lunch Train</span>
+                    </a>
+                    <a class="card" target="_blank" href="https://www.google.ca/maps/search/<%= @random_restaurant.name %>">
+                    <span>Get Directions</span>
+                    </a>
+                    <a class="card" target="_blank" href="https://www.skipthedishes.com">
+                    <span>Get it Delivered</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
