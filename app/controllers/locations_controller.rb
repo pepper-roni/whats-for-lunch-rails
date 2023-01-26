@@ -7,11 +7,12 @@ class LocationsController < ApplicationController
 
   def new
     @location = Location.new
+    @restaurant = Restaurant.find(params[:restaurant_id]).id
   end
 
   def create
     @location = Location.new(location_params)
-    # going to need restaurant here restaurant.locations.create! or something
+
     if @location.save
       redirect_to new_location_path, notice: "Location #{@locaiton.name} succesfully created"
     else
@@ -28,6 +29,6 @@ class LocationsController < ApplicationController
   end
 
   def location_params
-    params.require(:location).permit(:address, :city, :country_code, :province_code, :postal_code)
+    params.require(:location).permit(:address, :city, :country_code, :province_code, :postal_code, :restaurant_id)
   end
 end
